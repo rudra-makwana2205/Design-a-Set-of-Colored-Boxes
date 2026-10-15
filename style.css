@@ -1,0 +1,94 @@
+/* User Story 1: body background color */
+body {
+  background-color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.header h1 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: #7f8c8d;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
+/* User Story 2: .color-grid container */
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  padding: 1rem;
+}
+
+/* User Stories 4 & 5: .color-box class with non-zero width and height */
+.color-box {
+  width: 140px;
+  height: 140px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.color-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.box-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* User Story 6: .color1 with Hexadecimal color */
+.color1 {
+  background-color: #FF5733;
+}
+
+/* User Story 7: .color2 with RGB color */
+.color2 {
+  background-color: rgb(41, 128, 185);
+}
+
+/* User Story 8: .color3 with Predefined (word) color */
+.color3 {
+  background-color: teal;
+}
+
+/* User Story 9: .color4 with HSL color */
+.color4 {
+  background-color: hsl(280, 60%, 55%);
+}
+
+/* User Story 10: .color5 with background color set */
+.color5 {
+  background-color: #e67e22;
+}
